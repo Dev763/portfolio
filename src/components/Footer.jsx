@@ -1,29 +1,50 @@
 import React from "react";
 
 function Footer() {
-    return (
-      <div className="bg-gray-900 mt-3.5 h-[32vh]">
+  return (
+    <footer className="bg-zinc-950 text-white py-12 px-8 mt-10 border-t border-zinc-800">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        {/* Column 1: Brand & About */}
+        <div className="flex flex-col space-y-4">
+          <h2 className="text-2xl font-bold tracking-tighter">Dev Dhakal</h2>
+          <p className="text-zinc-400 leading-relaxed max-w-xs">
+            Building digital experiences with precision and purpose. 
+            Let's turn your ideas into functional reality.
+          </p>
+        </div>
 
-  <h1 className="flex justify-center pt-4">Navlink</h1>
-  <h1 className="float-right mr-4">Get Connected</h1>
+        {/* Column 2: Quick Links */}
+        <div className="flex flex-col space-y-4 md:items-center">
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">Navigation</h3>
+          <nav className="flex flex-col space-y-2 md:items-center">
+            <a href="#home" className="hover:text-blue-500 transition-colors">Home</a>
+            <a href="#projects" className="hover:text-blue-500 transition-colors">Projects</a>
+            <a href="#about" className="hover:text-blue-500 transition-colors">About</a>
+          </nav>
+        </div>
 
+        {/* Column 3: Social/Connect */}
+        <div className="flex flex-col space-y-4 md:items-end">
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-500">Get Connected</h3>
+          <div className="flex gap-5">
+            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-blue-500 transition-colors">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-500 transition-colors">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
-  <div className="ml-8 mb-8">
-    <h1 className="text-2xl">Dev Dhakal</h1>
-
-    <p className="text-lg text-gray-300 w-[22vw]">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Voluptatibus nemo dolores voluptatum!
-    </p>
-  </div>
-
-
-  <p className="flex justify-center text-gray-400">
-    © 2026. All rights reserved.
-  </p>
-
-</div>
-    )
+      {/* Bottom Bar */}
+      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-500 text-sm">
+        <p>© 2026 Dev Dhakal. All rights reserved.</p>
+        <p className="italic">Designed for impact.</p>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

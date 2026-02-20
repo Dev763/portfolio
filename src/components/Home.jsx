@@ -1,8 +1,10 @@
 import React from "react";
 import ProfilePic from "../assets/p1.jpg";
 
-function Home() {
+function Skill() {
   return (
+    <>
+    
     <div className="h-screen flex flex-col md:flex-row justify-between items-center px-6 md:px-20 gap-10 md:gap-0">
 
       {/* Left content */}
@@ -61,7 +63,8 @@ function Home() {
         `}
       </style>
     </div>
+    </>
   );
 }
 
-export default Home;
+export default Skill;
