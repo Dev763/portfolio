@@ -1,5 +1,6 @@
 import React from "react";
 import ProfilePic from "../assets/p1.jpg";
+import Project from "./project";
 
 function Skill() {
   return (
@@ -17,9 +18,12 @@ function Skill() {
         </p>
 
         <div className="mt-6 flex justify-center md:justify-start gap-4">
+{/*          
+         <Link to="/project" > */}
           <button className="bg-[rgb(127,81,207)] text-white hover:scale-105 transition duration-200 rounded-2xl p-2 px-6 cursor-pointer">
             View my Work
           </button>
+        {/* </Link> */}
 
           <button className="bg-[rgb(236,233,241)] text-black hover:bg-[rgb(127,81,207)] hover:text-white hover:scale-105 transition duration-200 rounded-2xl p-2 px-6 cursor-pointer">
             Reach Out
