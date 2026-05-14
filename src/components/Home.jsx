@@ -5,34 +5,45 @@ import Project from "./project";
 function Skill() {
   return (
     <>
-    
-    <div className="h-screen flex flex-col md:flex-row justify-between items-center px-6 md:px-20 gap-10 md:gap-0">
+
+    <div id="home" className="h-screen flex flex-col md:flex-row justify-between items-center px-6 md:px-20 gap-10 md:gap-0 mr-15 mt-12">
 
       {/* Left content */}
       <div className="max-w-xl text-center md:text-left ml-15 mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold">Hi, I am Dev Dhakal</h1>
-        <p className="mt-4 text-xl md:text-2xl text-gray-200">FrontEnd Developer</p>
-        <p className="mt-4 text-gray-300">
+<h1 className="text-4xl md:text-5xl font-bold">
+  Hi, I am{" "}
+  <span className="block md:inline">Dev Dhakal</span>
+</h1>        <p className="mt-4 text-xl md:text-2xl text-gray-200">FrontEnd Developer</p>
+        <p className="mt-4 text-gray-300 w-70 md:w-100">
           I build fast, reliable web apps with React, Next.js, and TypeScript
           with responsive design using Tailwind CSS.
         </p>
 
         <div className="mt-6 flex justify-center md:justify-start gap-4">
-{/*          
-         <Link to="/project" > */}
-          <button className="bg-[rgb(127,81,207)] text-white hover:scale-105 transition duration-200 rounded-2xl p-2 px-6 cursor-pointer">
+        
+          <button className="bg-[rgb(127,81,207)] text-white hover:scale-105 transition duration-200 rounded-2xl p-2 px-4 md:px-6 cursor-pointer" 
+          onClick={()=>
+            document.getElementById("projects").scrollIntoView({
+              behavior: "smooth",
+            })
+          }>
             View my Work
           </button>
         {/* </Link> */}
 
-          <button className="bg-[rgb(236,233,241)] text-black hover:bg-[rgb(127,81,207)] hover:text-white hover:scale-105 transition duration-200 rounded-2xl p-2 px-6 cursor-pointer">
+          <button className="bg-[rgb(236,233,241)] text-black hover:bg-[rgb(127,81,207)] hover:text-white hover:scale-105 transition duration-200 rounded-2xl p-2 px-6 cursor-pointer"
+          onClick={()=>
+            document.getElementById("contact").scrollIntoView({
+              behavior: "smooth",
+            })
+          }>
             Reach Out
           </button>
         </div>
       </div>
 
       {/* Right content - The "No-White" Color Traveling Frame */}
-      <div className="relative h-[450px] w-[400px] shrink-0 flex items-center justify-center mr-8 mb-22">
+      <div className="relative h-[400px] w-[320px] md:h-[450px] md:w-[400px] shrink-0 flex items-center justify-center ml-16 md:mr-8 mb-22">
         
         {/* The Animated Background (Dark Blue & Purple Train) */}
         <div className="absolute inset-0 overflow-hidden rounded-[30%_70%_70%_30%_/30%_30%_70%_70%] shadow-2xl">
@@ -67,6 +78,7 @@ function Skill() {
         `}
       </style>
     </div>
+ 
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createElement } from "react";
 import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiDownload, FiArrowRight, FiMaximize2, FiX, FiTerminal, FiMinus } from "react-icons/fi";
 import test from '../assets/pp.jpg';
 
@@ -27,9 +27,9 @@ function About() {
       {/* SOCIALS SECTION - Enhanced Hitboxes & Interaction */}
       <div className="hidden xl:flex flex-col gap-10 mr-12 border-r border-white/5 pr-10">
         {[
-          { icon: <FiGithub size={22} />, link: "https://github.com/your-username", label: "GH" },
-          { icon: <FiLinkedin size={22} />, link: "https://linkedin.com/in/your-username", label: "LI" },
-          { icon: <FiMail size={22} />, link: "mailto:your@email.com", label: "EM" }
+          { icon: <FiGithub size={22} />, link: "https://github.com/Dev763", label: "GH" },
+          { icon: <FiLinkedin size={22} />, link: "https://linkedin.com/in/dev-dhakal", label: "LI" },
+          { icon: <FiMail size={22} />, link: "mailto:dhakaldev92@email.com", label: "EM" }
         ].map((s, i) => (
           <a 
             key={i} 
@@ -116,12 +116,24 @@ function About() {
             </div>
 
             <div className="p-4 border-t border-white/5 grid grid-cols-1 sm:grid-cols-2 gap-3 bg-black/20">
-              <button className="flex items-center justify-center gap-2 py-4 bg-white text-black font-black uppercase text-[10px] tracking-[0.2em] hover:bg-purple-600 hover:text-white transition-all active:scale-95">
-                Download CV <FiDownload size={14} />
-              </button>
-              <button className="flex items-center justify-center gap-2 py-4 bg-transparent text-white font-black uppercase text-[10px] tracking-[0.2em] border border-white/40 hover:border-white transition-all active:scale-95">
+            
+            <a
+  href="/cv.pdf"
+  download="Dev_cv.pdf"
+  className="flex items-center justify-center gap-2 py-4 bg-white text-black font-black uppercase text-[10px] tracking-[0.2em] hover:bg-purple-600 hover:text-white transition-all active:scale-95 cursor-pointer"
+>
+  Download CV <FiDownload size={14} />
+</a>
+           
+              <button className="flex items-center justify-center gap-2 py-4 bg-transparent text-white font-black uppercase text-[10px] tracking-[0.2em] border border-white/40 hover:border-white transition-all active:scale-95" 
+              onClick={()=>
+                document.getElementById("contact").scrollIntoView({
+                  behavior: "smooth",
+                })
+              }>
                 Initiate Protocol <FiArrowRight size={14} />
               </button>
+            
             </div>
           </div>
         </div>

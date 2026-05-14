@@ -66,7 +66,8 @@ export default function UltimateSlider() {
  
   return (
   <>
-    <h1 className="text-3xl flex justify-center mb-8 mt-12">My Projects</h1>
+  <div id="projects">
+    <h1 className="text-3xl flex justify-center mb-8 pt-45">My Projects</h1>
    
     <div className="relative w-full overflow-hidden py-10">
       <div
@@ -112,6 +113,7 @@ export default function UltimateSlider() {
     className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/20 backdrop-blur-md h-12 w-12 rounded cursor-pointer" 
     onClick={leftSlide}> ←  </button>
     
+    </div>
     </div>
     </>
   );
