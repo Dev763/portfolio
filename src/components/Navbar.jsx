@@ -14,16 +14,16 @@ function Navbar() {
 
     {/* Center links */}
     <div className="w-1/3 flex justify-center items-center gap-4 md:gap-20 text-xs md:text-sm font-medium pl-5 md:pl-0">
-      <button onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}>
+      <button className="cursor-pointer" onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}>
         Home
       </button>
-      <button onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}>
+      <button className="cursor-pointer" onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}>
         Projects
       </button>
-      <button onClick={() => document.getElementById("skill").scrollIntoView({ behavior: "smooth" })}>
+      <button className="cursor-pointer" onClick={() => document.getElementById("skill").scrollIntoView({ behavior: "smooth" })}>
         Skills
       </button>
-      <button onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>
+      <button className="cursor-pointer" onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>
         Contact
       </button>
     </div>

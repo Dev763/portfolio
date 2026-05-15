@@ -125,7 +125,7 @@ function About() {
   Download CV <FiDownload size={14} />
 </a>
            
-              <button className="flex items-center justify-center gap-2 py-4 bg-transparent text-white font-black uppercase text-[10px] tracking-[0.2em] border border-white/40 hover:border-white transition-all active:scale-95" 
+              <button className="flex items-center justify-center gap-2 py-4 bg-transparent text-white font-black uppercase text-[10px] tracking-[0.2em] border border-white/40 hover:border-white transition-all active:scale-95 cursor-pointer" 
               onClick={()=>
                 document.getElementById("contact").scrollIntoView({
                   behavior: "smooth",
