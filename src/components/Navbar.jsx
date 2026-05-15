@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
   <nav className="sticky top-0 z-50 px-2 py-2 md:px-4 md:py-2">
-  <div className="max-w-3xl mx-auto flex items-center bg-[#08080c]/40 backdrop-blur-md border border-gray-800 text-white px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-lg md:max-w-7xl">
+  <div className="max-w-3xl mx-auto flex items-center bg-[#08080c]/35 backdrop-blur-md border border-gray-800 text-white px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-lg md:max-w-7xl">
 
     {/* Left spacer (balances center) */}
     <div className="w-1/3">
